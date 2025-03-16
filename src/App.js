@@ -9,8 +9,8 @@ const App = () => (
     <div className="dashbordImage">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/team-matches/:id" element={<TeamMatches />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/team-matches/:id" element={<TeamMatches/>} />
+        {/* <Route path="*" element={<NotFound/>} /> */}
       </Routes>
     </div>
   </Router>

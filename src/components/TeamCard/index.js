@@ -1,14 +1,14 @@
-// import {link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './index.css'
 
 const TeamCard = ({ team }) => {
 
   return (
     <li className="team-card">
-        <div className='cardDiv'>
+        <Link to={`/team-matches/${team.id}`} className='cardDiv'>
             <img src={team.team_image_url} alt={team.name} />
             <p>{team.name}</p>
-        </div>
+        </Link>
     </li>
   )
 }

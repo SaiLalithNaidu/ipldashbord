@@ -1,3 +1,4 @@
 import './index.css';
 
-const LatestMatch = () => <div></div>
+const LatestMatch = () => <div>Latest Team Match</div>
+export default LatestMatch;
