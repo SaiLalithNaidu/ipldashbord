@@ -15,8 +15,8 @@ const TeamMatches = () =>
     {
         try 
         {
-            const apiUrl = "https://apis.ccbp.in/ipl"
-            const response = await fetch(`${apiUrl}/team-matches/${params.id}`); 
+            const apiUrl = `https://apis.ccbp.in/ipl/team-matches/${params.id}`
+            const response = await fetch(apiUrl); 
             const data = await response.json();
             console.log("Team Matches Data: ", data);   
         } 
