@@ -1,11 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import './index.css';
+import LatestMatch from '../LatestMatch';
 
 const TeamMatches = () => 
 {
 
   const params = useParams(); // Access route parameters directly
+  const [teamsData, setTeamsData] = useState([]);
+
   useEffect(() => 
   {
     fetchDetails();
@@ -15,10 +18,12 @@ const TeamMatches = () =>
     {
         try 
         {
-            const apiUrl = `https://apis.ccbp.in/ipl/team-matches/${params.id}`
-            const response = await fetch(apiUrl); 
+            const apiUrl = `https://apis.ccbp.in/ipl/${params.id}`
+            const response = await fetch(apiUrl);
+ 
             const data = await response.json();
-            console.log("Team Matches Data: ", data);   
+            console.log("Team Matches Data: ", data);
+            setTeamsData(data);   
         } 
         catch (error) 
         {
@@ -29,7 +34,7 @@ const TeamMatches = () =>
 
   return (
     <div>
-      Team Match Component
+      <LatestMatch teamsData={teamsData} teamId={params.id}/>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.lastestMatchContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgMatch
+{
+    background-color: black;
+    height: 100Vh;
+}

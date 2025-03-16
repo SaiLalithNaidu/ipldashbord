@@ -5,7 +5,7 @@ const TeamCard = ({ team }) => {
 
   return (
     <li className="team-card">
-        <Link to={`/team-matches/${team.id}`} className='cardDiv'>
+        <Link to={`/${team.id}`} className='cardDiv'>
             <img src={team.team_image_url} alt={team.name} />
             <p>{team.name}</p>
         </Link>

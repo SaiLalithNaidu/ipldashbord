@@ -9,7 +9,7 @@ const App = () => (
     <div className="dashbordImage">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/team-matches/:id" element={<TeamMatches/>} />
+        <Route path="/:id" element={<TeamMatches/>} />
         {/* <Route path="*" element={<NotFound/>} /> */}
       </Routes>
     </div>
