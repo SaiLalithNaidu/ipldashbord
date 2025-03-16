@@ -1,0 +1,38 @@
+.team-card
+{
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px;
+    width: 40%;
+    height: 15%;
+    background-color: #475569;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.team-card img
+{
+    width: 2rem;   
+    height: 3rem;
+    margin-right: 1rem;
+}
+.team-card p
+{
+    color: white;
+    font-family: roboto;
+}
+.cardDiv
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p
+{
+    margin: 0px;
+    padding-right: 5px;
+}

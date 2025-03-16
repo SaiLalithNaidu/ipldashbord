@@ -1,0 +1,55 @@
+.homeMainDiv
+{
+    background-image: url("https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png");
+    height: 100vh;
+}
+.headerDiv
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.headerDiv img
+{
+    width: 2rem;
+    margin-right: 8px;
+}
+.TeamsListDiv 
+{
+    border: 2px solid white;  /* Debugging */
+    padding: 10px;
+    width: 35%;
+    border-radius: 10px;
+}
+.teamsUl
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 30%;
+    padding-left: 0px;
+}
+.content-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px)
+{
+    .TeamsListDiv
+    {
+        width: 100%;
+    }    
+}
+@media screen and (max-width: 500px)
+{
+    .TeamsListDiv
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }    
+}
