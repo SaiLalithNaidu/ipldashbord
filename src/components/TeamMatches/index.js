@@ -12,7 +12,7 @@ const TeamMatches = () =>
   useEffect(() => 
   {
     fetchDetails();
-  }, []);
+  },[]);
 
   const fetchDetails = async() =>
     {

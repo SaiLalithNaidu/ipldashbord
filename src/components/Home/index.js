@@ -56,7 +56,6 @@ const Home = () => {
   const renderLoadingDiv = () => (
     <div className="loading-spinner" data-testid="loader">
       <div className="spinner"></div>
-      <p>Loading teams...</p>
     </div>
   )
 
